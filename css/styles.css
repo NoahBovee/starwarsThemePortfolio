@@ -1,0 +1,159 @@
+@import "./cardFlip.css";
+@import "./shake.css";
+@import "./starWars.css";
+@import "./scrollbar.css";
+
+body {
+  background-image: url(/assets/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  font-family: Arial, Tahoma, Serif;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+#myBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 33.33%;
+  display: none;
+  position: relative;
+  transition: 1s ease;
+}
+
+.column.personal {
+  width: 100%;
+}
+
+.column,
+.content {
+  border-radius: 25px;
+}
+
+.projects,
+.content {
+  color: #feda4a;
+  font-weight: bolder;
+  margin-top: 50px;
+  width: auto;
+}
+
+.projects > .content > img {
+  width: 600px;
+  border: red solid 1px;
+  background-color: black;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  gap: 40px;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to right,
+    #003973,
+    #e5e5be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn.active {
+  background: linear-gradient(
+    to right,
+    #003973,
+    #e5e5be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column.projects.show {
+  flex-basis: calc(50% - 50px);
+  margin: 5px;
+  box-sizing: border-box;
+  max-height: 50%;
+  text-align: center;
+  flex-basis: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+}
+
+@media screen and (max-width: 900px) {
+  .column.projects.show {
+    flex-basis: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+}
+
+.overlay {
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  display: none;
+  opacity: 0;
+}
+
+.overlay:hover {
+  cursor: pointer;
+}
+
+.column.projects:hover .overlay {
+  display: block;
+  opacity: 1;
+}
+.column.projects img:hover {
+  opacity: 0.3;
+}
+
+/* .column:not(.resume):hover .overlay {
+  display: block;
+  opacity: 1;
+}
+.column:not(.resume):hover img {
+  opacity: 0.3;
+} */

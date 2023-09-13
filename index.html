@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('personal')">
+        Me
+      </button>
+      <button class="btn" onclick="filterSelection('projects')">
+        Projects
+      </button>
+      <button class="btn" onclick="filterSelection('resume')">Resume</button>
+
+      <button class="btn" onclick="filterSelection('contact')">Contact</button>
+    </div>
+
+    <div class="row">
+      <section class="star-wars">
+        <div class="column personal">
+          <div class="content">
+            <div class="crawl">
+              <div class="title">
+                <button class="animation-button">Start the show</button>
+                <p class="title-p">Employee X</p>
+                <h1 class="title-h">A New Hope</h1>
+              </div>
+
+              <p>
+                Greetings, I am Noah Bovée, a Padawan in webdevelopment,
+                mastering the ways of the front-end Force. My journey into the
+                galaxy of web technologies has been nothing short of epic. Armed
+                with galaxy's most powerful weapons like HTML, CSS, JavaScript,
+                and the powerful React, I've even delved into the dark side with
+                PHP and MySQL. I wield my skills to craft websites that flow
+                like the Force, always responsive and user-friendly. Now, I'm on
+                a quest for job opportunities, eager to continue my training and
+                become a true web Jedi Knight. May the HTML be with you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-grid">
+        <div class="column projects">
+          <div class="content">
+            <img
+              src="./assets/basicShooter.png"
+              alt="project1"
+              class="project-img"
+            />
+            <h4>Shoot the dots</h4>
+            <p>Basic shooter game in JS</p>
+            <div class="overlay">
+              <p>view code</p>
+            </div>
+          </div>
+        </div>
+        <div class="column projects">
+          <div class="content">
+            <img
+              src="./assets/Schermafbeelding 2023-05-29 135011.png"
+              alt="Car"
+              class="project-img"
+            />
+            <h4>Platformer</h4>
+            <p>Game built with Phaser.js course</p>
+            <div class="overlay">
+              <p>view code</p>
+            </div>
+          </div>
+        </div>
+        <div class="column projects">
+          <div class="content">
+            <img
+              src="./assets/Schermafbeelding 2023-09-11 184729.png"
+              alt="Car"
+              class="project-img"
+            />
+            <h4>Pokemon Battle</h4>
+            <p>Small project with the PokéApi</p>
+            <div class="overlay">
+              <p>view code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column resume">
+        <div class="content">
+          <img
+            src="./assets/CV-NoahBovée.jpg"
+            alt="Mountains"
+            style="width: 100%"
+            class="resumeImg"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="contact-grid">
+          <div class="column contact">
+            <div class="flip-card">
+              <div class="front" style="background-color: #70cc00">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div
+                class="back"
+                style="
+                  background: rgb(255, 33, 46);
+                  background: linear-gradient(
+                    301deg,
+                    rgba(255, 33, 46, 1) 25%,
+                    rgba(47, 249, 36, 1) 75%
+                  );
+                "
+              >
+                <div class="back-card">
+                  <p>+32 477717892</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column contact">
+            <div class="flip-card">
+              <div class="front" style="background-color: #db4437">
+                <i class="fa-regular fa-paper-plane"></i>
+              </div>
+              <div
+                class="back"
+                style="
+                  background: rgb(255, 33, 46);
+                  background: linear-gradient(
+                    301deg,
+                    rgba(255, 33, 46, 1) 25%,
+                    rgba(255, 192, 0, 1) 75%
+                  );
+                "
+              >
+                <div class="back-card">
+                  <p>noahbov@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column contact">
+            <div class="flip-card">
+              <div class="front" style="background-color: #833ab4">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div
+                class="back"
+                style="
+                  background: rgb(255, 33, 46);
+                  background: linear-gradient(
+                    301deg,
+                    rgba(255, 33, 46, 1) 25%,
+                    rgba(135, 30, 254, 1) 75%
+                  );
+                "
+              >
+                <div class="back-card">
+                  <a href="https://www.instagram.com/noahbovee/" target="_blank"
+                    >Go to my instagram</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column contact">
+            <div class="flip-card">
+              <div class="front" style="background-color: #1778f2">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div
+                class="back"
+                style="
+                  background: rgb(255, 33, 46);
+                  background: linear-gradient(
+                    301deg,
+                    rgba(255, 33, 46, 1) 25%,
+                    rgba(21, 242, 253, 1) 75%
+                  );
+                "
+              >
+                <div class="back-card">
+                  <a
+                    href="https://www.facebook.com/noke.boveke/"
+                    target="_blank"
+                    >Go to my facebook</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/filter.js"></script>
+    <script src="./js/flipCards.js"></script>
+    <script src="./js/starWars.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/82dfd575f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
