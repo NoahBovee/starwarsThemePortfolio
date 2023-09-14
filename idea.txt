@@ -1,21 +1,7 @@
 TO DO!!!!
 
-- remove filter: work with main.htlm as just one big nav menu, all nav li's lead to entire new html file 
-=> nav menu idea: 1 column, 4 links underneath each other with sliding background-color hover effect
-
-- resume img should me modal // don't use picture, write experiences etc...
-
-- slightly pimp projects (add react project) // instead of a grid, maybe just one column with some
-more text explaining the project
-
-- links to github!!
-
-- nice to add: spaceships flying around in background // make small game out of the contact cards: 
-ex. all the cards move around and bounce against window's border, shoot / click it to destroy and see
-
-
-
-
+- lightsaber cursor
+- hover over filter buttons => change in color of lightsaber
 - responsiveness!!
 
 

@@ -11,85 +11,165 @@
   </head>
   <body>
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('personal')">
-        Me
+      <button
+        class="btn active"
+        onclick="filterSelection('personal')"
+        style="background-color: #70cc00"
+      >
+        Intro
       </button>
-      <button class="btn" onclick="filterSelection('projects')">
+      <button
+        class="btn"
+        onclick="filterSelection('projects')"
+        style="background-color: #833ab4"
+      >
         Projects
       </button>
-      <button class="btn" onclick="filterSelection('resume')">Resume</button>
+      <button
+        class="btn"
+        onclick="filterSelection('resume')"
+        style="background-color: #e10000"
+      >
+        Resume
+      </button>
 
-      <button class="btn" onclick="filterSelection('contact')">Contact</button>
+      <button
+        class="btn"
+        onclick="filterSelection('contact')"
+        style="background-color: #1778f2"
+      >
+        Contact
+      </button>
     </div>
 
     <div class="row">
       <section class="star-wars">
         <div class="column personal">
-          <div class="content">
-            <div class="crawl">
-              <div class="title">
-                <button class="animation-button">Start the show</button>
-                <p class="title-p">Employee X</p>
-                <h1 class="title-h">A New Hope</h1>
-              </div>
-
-              <p>
-                Greetings, I am Noah Bovée, a Padawan in webdevelopment,
-                mastering the ways of the front-end Force. My journey into the
-                galaxy of web technologies has been nothing short of epic. Armed
-                with galaxy's most powerful weapons like HTML, CSS, JavaScript,
-                and the powerful React, I've even delved into the dark side with
-                PHP and MySQL. I wield my skills to craft websites that flow
-                like the Force, always responsive and user-friendly. Now, I'm on
-                a quest for job opportunities, eager to continue my training and
-                become a true web Jedi Knight. May the HTML be with you!
-              </p>
-            </div>
+          <div class="title">
+            <h class="title-p"> Greetings </h>
+            <h1 class="title-h">I am Noah</h1>
           </div>
+
+          <p>
+            A Padawan in webdevelopment, mastering the ways of the front-end. My
+            journey into the galaxy of web technologies has been nothing short
+            of epic. Armed with galaxy's most powerful weapons like HTML, CSS,
+            JavaScript, and the powerful React, I've even delved into the dark
+            side with PHP and MySQL. I wield my skills to craft websites that
+            flow like the Force, always responsive and user-friendly. Now, I'm
+            on a quest for job opportunities, eager to continue my training and
+            become a true web Jedi Knight. May the HTML be with you!
+          </p>
+
+          <img
+            src="./assets/star-destroyersPNG.png"
+            alt="starDestroyer"
+            class="star-destroyer"
+          />
+          <img
+            src="./assets/star-destroyersPNG.png"
+            alt="starDestroyer"
+            class="star-destroyer2"
+          />
         </div>
       </section>
 
       <div class="project-grid">
         <div class="column projects">
-          <div class="content">
-            <img
-              src="./assets/basicShooter.png"
-              alt="project1"
-              class="project-img"
-            />
-            <h4>Shoot the dots</h4>
-            <p>Basic shooter game in JS</p>
-            <div class="overlay">
-              <p>view code</p>
-            </div>
+          <img
+            src="./assets/basicShooter.png"
+            alt="project1"
+            class="project-img"
+          />
+          <div class="project-description">
+            <h1>Shoot the dots</h1>
+            <p>Basic shooter game using object constructors</p>
+            <p>
+              Tech Stacks:
+              <i class="fa-brands fa-html5" style="color: #e10000"></i>
+              <i class="fa-brands fa-css3-alt" style="color: #0000e1"></i>
+              <i class="fa-brands fa-js" style="color: #f0db4f"> </i>
+            </p>
+          </div>
+
+          <div class="overlay">
+            <p>
+              <a
+                href="https://github.com/NoahBovee/Basic-Shooter"
+                target="_blank"
+                >view code</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="column projects">
+          <img
+            src="./assets/Schermafbeelding 2023-09-11 184729.png"
+            alt="Car"
+            class="project-img"
+          />
+          <div class="project-description">
+            <h1>Pokemon Battle</h1>
+            <p>Small project with the PokéApi.</p>
+            <p>
+              Tech Stacks:
+              <i class="fa-brands fa-html5" style="color: #e10000"></i>
+              <i class="fa-brands fa-css3-alt" style="color: #0000e1"></i>
+              <i class="fa-brands fa-js" style="color: #f0db4f"> </i>
+            </p>
+          </div>
+
+          <div class="overlay">
+            <p>
+              <a
+                href="https://github.com/NoahBovee/PokemonAPI-Battle"
+                target="_blank"
+                >view code</a
+              >
+            </p>
           </div>
         </div>
         <div class="column projects">
-          <div class="content">
-            <img
-              src="./assets/Schermafbeelding 2023-05-29 135011.png"
-              alt="Car"
-              class="project-img"
-            />
-            <h4>Platformer</h4>
-            <p>Game built with Phaser.js course</p>
-            <div class="overlay">
-              <p>view code</p>
-            </div>
+          <img src="./assets/react.js-img.png" alt="Car" class="project-img" />
+
+          <div class="project-description">
+            <h1>Big React project</h1>
+            <p>
+              Linktree alternative made with 2 BE developers and me as FE
+              developer
+            </p>
+            <p>
+              Tech Stacks:
+              <i class="fa-brands fa-html5" style="color: #e10000"></i>
+              <i class="fa-brands fa-css3-alt" style="color: #0000e1"></i>
+              <i class="fa-brands fa-react" style="color: #00d9ff"></i>
+            </p>
+          </div>
+
+          <div class="overlay">
+            <p>
+              <a
+                href="https://github.com/BirhanBey/mediacardsFE/tree/main"
+                target="_blank"
+                >view code</a
+              >
+            </p>
           </div>
         </div>
         <div class="column projects">
-          <div class="content">
-            <img
-              src="./assets/Schermafbeelding 2023-09-11 184729.png"
-              alt="Car"
-              class="project-img"
-            />
-            <h4>Pokemon Battle</h4>
-            <p>Small project with the PokéApi</p>
-            <div class="overlay">
-              <p>view code</p>
-            </div>
+          <img
+            src="./assets/Schermafbeelding 2023-05-29 135011.png"
+            alt="Car"
+            class="project-img"
+          />
+          <div class="project-description">
+            <h1>Platformer</h1>
+            <p>Currently building a game with a Phaser.js course</p>
+          </div>
+
+          <div class="overlay">
+            <p>view code</p>
           </div>
         </div>
       </div>
@@ -210,7 +290,6 @@
 
     <script src="./js/filter.js"></script>
     <script src="./js/flipCards.js"></script>
-    <script src="./js/starWars.js"></script>
 
     <script
       src="https://kit.fontawesome.com/82dfd575f4.js"
