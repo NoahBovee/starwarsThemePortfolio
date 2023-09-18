@@ -46,3 +46,20 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+var menuVisible = false; // Track menu visibility
+
+function toggleMenu() {
+  const menu = document.getElementById("myBtnContainer");
+  const hamburger = document.getElementById("hamburger");
+
+  if (menuVisible) {
+    menu.style.display = "none";
+    hamburger.classList.remove("cross");
+  } else {
+    menu.style.display = "flex";
+    hamburger.classList.add("cross");
+  }
+
+  menuVisible = !menuVisible;
+}

@@ -55,3 +55,16 @@
   column-gap: 30px;
   row-gap: 30px;
 }
+
+@media screen and (max-width: 668px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column.contact {
+    width: 75vw;
+  }
+}

@@ -10,36 +10,40 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="myBtnContainer">
-      <button
-        class="btn active"
-        onclick="filterSelection('personal')"
-        style="background-color: #70cc00"
-      >
-        Intro
+    <div class="navbar">
+      <button id="hamburger" class="hamburger" onclick="toggleMenu()">
+        &#9776;
       </button>
-      <button
-        class="btn"
-        onclick="filterSelection('projects')"
-        style="background-color: #833ab4"
-      >
-        Projects
-      </button>
-      <button
-        class="btn"
-        onclick="filterSelection('resume')"
-        style="background-color: #e10000"
-      >
-        Resume
-      </button>
-
-      <button
-        class="btn"
-        onclick="filterSelection('contact')"
-        style="background-color: #1778f2"
-      >
-        Contact
-      </button>
+      <div id="myBtnContainer">
+        <button
+          class="btn active"
+          onclick="filterSelection('personal')"
+          style="background-color: #70cc00"
+        >
+          Intro
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('projects')"
+          style="background-color: #833ab4"
+        >
+          Projects
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('resume')"
+          style="background-color: #e10000"
+        >
+          Resume
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('contact')"
+          style="background-color: #1778f2"
+        >
+          Contact
+        </button>
+      </div>
     </div>
 
     <div class="row">
@@ -83,7 +87,7 @@
           />
           <div class="project-description">
             <h1>Shoot the dots</h1>
-            <p>Basic shooter game using object constructors</p>
+            <p>Basic shooter game using object constructors (desktop only).</p>
             <p>
               Tech Stacks:
               <i class="fa-brands fa-html5" style="color: #e10000"></i>
@@ -111,7 +115,7 @@
           />
           <div class="project-description">
             <h1>Pokemon Battle</h1>
-            <p>Small project with the PokéApi.</p>
+            <p>Small project with the PokéApi (desktop only).</p>
             <p>
               Tech Stacks:
               <i class="fa-brands fa-html5" style="color: #e10000"></i>
@@ -159,13 +163,19 @@
         </div>
         <div class="column projects">
           <img
-            src="./assets/Schermafbeelding 2023-05-29 135011.png"
-            alt="Car"
+            src="./assets/starwarsporto.png"
+            alt="starwars-project"
             class="project-img"
           />
           <div class="project-description">
-            <h1>Platformer</h1>
-            <p>Currently building a game with a Phaser.js course</p>
+            <h1>Star Wars themed portfolio</h1>
+            <p>
+              Tech Stacks:
+              <i class="fa-brands fa-html5" style="color: #e10000"></i>
+              <i class="fa-brands fa-css3-alt" style="color: #0000e1"></i>
+              <i class="fa-brands fa-js" style="color: #f0db4f"> </i>
+            </p>
+            <!-- <p></p> -->
           </div>
 
           <div class="overlay">
@@ -177,7 +187,7 @@
       <div class="column resume">
         <div class="content">
           <img
-            src="./assets/CV-NoahBovée.jpg"
+            src="./assets/CV-NoahBovée (2).png"
             alt="Mountains"
             style="width: 100%"
             class="resumeImg"

@@ -61,3 +61,82 @@
     right: calc(100% + 100px);
   }
 }
+
+@media (max-width: 980px) {
+  .star-wars {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .star-wars {
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 680px) {
+  .star-wars {
+    line-height: 200%;
+    letter-spacing: 1px;
+  }
+  .title {
+    line-height: 150%;
+  }
+}
+@media (max-width: 580px) {
+  .title-h {
+    font-size: 2.1rem;
+  }
+  .title-p {
+    font-size: 2.1rem;
+  }
+
+  .star-wars p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .star-wars {
+    line-height: 200%;
+  }
+
+  .title-h {
+    font-size: 2rem;
+  }
+  .title-p {
+    font-size: 2rem;
+  }
+
+  .star-wars p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .star-wars {
+    line-height: 150%;
+  }
+  .title-h {
+    font-size: 1.5rem;
+  }
+  .title-p {
+    font-size: 1.5rem;
+  }
+
+  .star-wars p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .star-wars {
+    line-height: 150%;
+  }
+  .title-h {
+    font-size: 1.3rem;
+  }
+  .title-p {
+    font-size: 1.3rem;
+  }
+
+  .star-wars p {
+    font-size: 0.7rem;
+  }
+}

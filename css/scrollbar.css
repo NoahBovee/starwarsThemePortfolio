@@ -1,22 +1,22 @@
 /* Track (background) */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
+  width: 12px;
 }
 
 /* Handle (thumb) */
 ::-webkit-scrollbar-thumb {
-  background: black; /* Scrollbar thumb color */
-  border-radius: 6px; /* Round the corners of the thumb */
+  background: black;
+  border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #8a2be2; /* Darker purple on hover */
+  background: red;
 }
 
 /* Track (background) on hover */
 ::-webkit-scrollbar-track:hover {
-  background: #eee; /* Light gray on scrollbar track hover */
+  background: #eee;
 }
 
 /* Button (arrows) */
